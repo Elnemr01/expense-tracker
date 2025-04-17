@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+    * {
+    @apply m-0 p-0;
+    }
+
+    body {
+    @apply box-border flex flex-col items-center justify-center min-h-screen;
+    background-color: #f7f7f7;
+    font-family: 'Lato', sans-serif;
+    }
+
+    .App {
+    @apply mt-10;
+    }
+
+    header h1,
+    h1 {
+    @apply text-[23px] font-semibold capitalize tracking-wide;
+    }
+
+    .container {
+    @apply mx-auto my-[30px] w-[350px];
+    }
+
+    h3 {
+    @apply border-b border-[#bbb] pb-[10px] my-[40px] mb-[10px];
+    }
+
+    h4 {
+    @apply uppercase;
+    }
+
+    .inc-exp-container {
+    @apply bg-white shadow p-5 flex justify-between my-5;
+    }
+
+    .inc-exp-container > div {
+    @apply flex-1 text-center;
+    }
+
+    .inc-exp-container > div:first-of-type {
+    @apply border-r border-[#dedede];
+    }
+
+    .money {
+    @apply text-[20px] tracking-wide my-1;
+    }
+
+    .money.plus {
+    @apply text-[#2ecc71];
+    }
+
+    .money.minus {
+    @apply text-[#c0392b];
+    }
+
+    label {
+    @apply inline-block my-2.5;
+    }
+
+    input[type='text'],
+    input[type='number'] {
+    @apply border border-[#dedede] rounded-sm block text-[16px] p-2.5 w-full;
+    }
+
+    .btn {
+    @apply cursor-pointer bg-[#9c88ff] text-white shadow text-[16px] border-0 block w-full my-[10px] mb-[30px] p-2.5;
+    }
+
+    .btn:focus,
+    .delete-btn:focus {
+    @apply outline-none;
+    }
+
+    .list {
+    @apply list-none p-0 mb-10;
+    }
+
+    .list li {
+    @apply bg-white shadow text-[#333] flex justify-between relative p-2.5 my-2.5;
+    }
+
+    .list li.plus {
+    @apply border-r-[5px] border-[#2ecc71];
+    }
+
+    .list li.minus {
+    @apply border-r-[5px] border-[#c0392b];
+    }
+
+    .delete-btn {
+    @apply cursor-pointer bg-[#e74c3c] border-0 text-white text-[20px] leading-[20px] px-[5px] py-[2px] absolute top-1/2 left-0 transform -translate-x-full -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in-out;
+    }
+
+    .list li:hover .delete-btn {
+    @apply opacity-100;
+    }
+
+    /* Responsive */
+    @media (max-width: 320px) {
+    .container {
+        @apply w-[300px];
+    }
+    }
