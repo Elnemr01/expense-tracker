@@ -4,7 +4,7 @@ import Blance from './components/Blance'
 import Header from './components/Header'
 import IncomeExpense from './components/IncomeExpense'
 import TransizationList from './components/TransizationList'
-import { ConProvider } from './context/globalState'
+import { ConProvider } from './context/GlobalState'
 
 
 function App() {
