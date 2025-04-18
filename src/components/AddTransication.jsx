@@ -1,5 +1,5 @@
-import React, {useContext, useEffect, useState } from 'react'
-import { Context } from '../context/globalState';
+import React, {useContext, useState } from 'react'
+import { Context } from '../context/GlobalState';
 import {v4 as uuidv4} from 'uuid';
 
 const AddTransication = () => {

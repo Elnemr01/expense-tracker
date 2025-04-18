@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Context } from '../context/globalState'
+import { Context } from '../context/GlobalState'
 import Transactoin from './Transactoin';
 
 const TransizationList = () => {

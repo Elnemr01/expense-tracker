@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Context } from '../context/globalState';
+import { Context } from '../context/GlobalState';
 
 const Transactoin = ({trans}) => {
     let sign = trans.amount<0 ? "-" : "+";
